@@ -1,0 +1,10 @@
+td {
+    border: 1px solid rebeccapurple;
+    width: 200px;
+    height: 200px;
+}
+
+.gamebox {
+    display: flex;
+    justify-content: center;
+}
