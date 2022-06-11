@@ -74,7 +74,10 @@ const CheckForWinner =(squares) => {
     console.log(squares);
   };
 
-
+  const handleRestart = () =>{
+    setWinner(null);
+    setCells(Array(9).fill(''));
+  }
   //clicking
   //num is passed as a prop
   const Box = ({ num }) => {
@@ -114,7 +117,7 @@ const CheckForWinner =(squares) => {
       {winner && (
         <>
           <p>{winner} is the winner!!!</p>
-          <button>Play Again</button>
+          <button onClick={() => handleRestart()}>Play Again</button>
         </>
       )}
     </div>
