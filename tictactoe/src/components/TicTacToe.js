@@ -9,9 +9,11 @@ const TicTacToe = () => {
 
   //track ites that are being clicked
 const[cells, setCells] = useState(Array(9).fill(''));
+
+//tracks winner
 const[winner, setWinner] = useState();
 
-
+//check winner
 const CheckForWinner =(squares) => {
    {
 
@@ -87,9 +89,6 @@ const CheckForWinner =(squares) => {
   
   //track each cell that is being clicked
   //props
-  
-  
-  
   
   
   return (
